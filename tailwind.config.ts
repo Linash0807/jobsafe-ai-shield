@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// JobSafe AI Shield custom colors
+				jobsafe: {
+					'blue-dark': '#0F172A',
+					'blue': '#1E3A8A',
+					'blue-light': '#3B82F6',
+					'teal': '#0891B2',
+					'teal-light': '#22D3EE',
+					'orange': '#FB923C',
+					'danger': '#EF4444',
+					'warning': '#F59E0B',
+					'success': '#10B981',
 				}
 			},
 			borderRadius: {
@@ -84,11 +97,22 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-shield': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.7' },
+				},
+				'scanning': {
+					'0%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(100%)' },
+					'100%': { transform: 'translateY(0)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-shield': 'pulse-shield 3s ease-in-out infinite',
+				'scanning': 'scanning 2s ease-in-out infinite',
 			}
 		}
 	},
